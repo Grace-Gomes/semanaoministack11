@@ -50,6 +50,12 @@ return(
          <FiLogIn size={16} color="#E02041"/>
          Não tem cadastro
      </Link>
+
+      
+     <Link className=".back-link"     to="/who">
+         <FiLogIn size={16} color="#E02041"/>
+         Quem somos
+     </Link>
      
          </form>
 

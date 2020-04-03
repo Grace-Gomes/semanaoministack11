@@ -19,6 +19,10 @@ export default function Incidents() {
 
   function navigateToDetail(incident) {
     navigation.navigate('Detail', { incident });
+    
+  }
+  function navigateToWho(){
+    navigation.navigate('Who');
   }
 
   async function loadIncidents() {
@@ -56,6 +60,16 @@ export default function Incidents() {
       </View>
 
       <Text style={styles.title}>Bem-vindo!</Text>
+
+
+      <TouchableOpacity 
+              style={styles.detailsButton} 
+              onPress={() => navigateToWho()}
+            >
+              <Text style={styles.detailsButtonText}>Sobre nós</Text>
+              <Feather name="arrow-right" size={16} color="#E02041" />
+            </TouchableOpacity>
+
       <Text style={styles.description}>Escolha um dos casos abaixo e salve o dia.</Text>
     
       <FlatList 
